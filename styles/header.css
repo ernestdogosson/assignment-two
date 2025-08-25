@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+nav {
+  width: fit-content;
+  background-color: #0000007f;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background 0.5s ease;
+  margin: 0;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  margin: 0 10px;
+  transition: color 0.3s;
+  text-shadow: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+  padding: 15px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ffffffc5;
+  color: #000;
+  border-radius: 8px;
+}
+
+.header__title {
+  font-size: clamp(2rem, 5vw, 5rem);
+  color: #fff;
+}
