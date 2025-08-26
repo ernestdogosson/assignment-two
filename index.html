@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/lessons.css" />
@@ -20,8 +21,8 @@
       <nav>
         <ul>
           <li><a href="#about-me">About me</a></li>
-          <li><a href="">Lessons</a></li>
-          <li><a href="">Reflections</a></li>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#reflection">Reflections</a></li>
           <li><a href="">Looking Forward</a></li>
         </ul>
       </nav>
@@ -30,7 +31,7 @@
       <section class="about__me">
         <h3 id="about-me">About me</h3>
         <p>
-          Hi there, &#128406 <br />
+          Hi there, &#128406 <br/>
           I am Ernest. I have just begun my front-end development journey at
           <span class="bold">Sundsgårdens Folkhögskola</span>, and I am excited to explore everything this
           path has to offer.
@@ -40,22 +41,24 @@
           websites that are both <span class="bold">functional and enjoyable</span> to use.
         </p>
         <p>
-          What drives me is the mix of creativity and problem-solving—designing
-          interfaces, experimenting with code, and learning new skills every
-          day.
+          What drives me is the mix of creativity and problem solving designing interfaces, experimenting with code, and learning new skills everyday.
         </p>
         <p>
           I am looking forward to growing as a developer and building <span class="bold">projects
           that make a real impact</span>.
         </p>
       </section>
-      <section class="lessons">
+      <section class="lessons" id="lessons">
         <h3>Lessons</h3>
-        <div class="lesson__card">
-          <p class="lesson__card__title">Lesson one</p>
+        <div class="lesson__card card__one">
+          <div class="lesson__card__title"
+          onclick="this.nextElementSibling.classList.toggle('show')"
+          >
+            <p>Lesson one</p>
+          </div>
           <div class="lesson__notes">
             <p>
-              We covered what HTML is, which is a hyper markup language use to
+              We covered what <span>HTML</span> is, which is a hyper markup language use to
               create the structure and render text unto a website. We also covered
               the basic structure of a web page and other elements and tags. below
               is list of some of the tags.
@@ -78,8 +81,42 @@
               installed some plugins to our editor to optimism workflow
             </p>
           </div>
-          
         </div>
+
+        <div class="lesson__card card__two">
+          <div class="lesson__card__title" 
+          onclick="this.nextElementSibling.classList.toggle('show')"
+          >
+            <p>Lesson two</p>
+          </div>
+          <div class="lesson__notes">
+            <p>
+            This was a bit challenging as a bit more technical topics were covered. We basically downloaded git and created a github account. We covered repository creation, how initialize file tracking, pull and add commits. We also saw to working in teams is facilitated through main and branch repos. Repository cloning was also covered and som commit best practices too. The main commands to keep in mind are:
+              <ul>
+                <li>git init at the start of every project</li>
+                <li>git status to check status of files</li>
+                <li>git add </li>
+                <li>git commit</li>
+                <li>git checkout</li>
+                <li>git branch</li>
+                <li>git merge</li>
+              </ul> 
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reflection">
+        <h3 id="reflection">Reflection so far</h3>
+        <p>
+          Starting this course has been both exciting and challenging. At first, I felt unsure about where to begin, even with basic HTML and CSS, but I quickly discovered how small changes could shape a webpage’s structure and style. Experimenting with images, colors, layouts, and simple effects taught me the basics of design and functionality, though I often ran into issues that required patience and trial-and-error.
+        </p>
+        <p>
+          Even in these early stages, I have started to see how coding can be creative, and how learning step by step builds confidence. I am still exploring and figuring things out, but I feel motivated to continue, knowing that each small experiment brings me closer to understanding how websites really work.
+        </p>  
+        <p>
+          Learning Git and GitHub was confusing at first. The concepts of commits branches, and pushing changes felt overwhelming, and I often got stuck trying to connect my local files to GitHub. Gradually, with practice, I started understanding how version control works and how to track changes properly. It is still new to me, but I am beginning to feel more confident navigating repositories and managing my projects online.
+        </p>
       </section>
       
     </main>

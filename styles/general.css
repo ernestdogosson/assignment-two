@@ -8,7 +8,6 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0;
-  padding-bottom: 2000px;
 }
 
 main {
@@ -21,10 +20,10 @@ main {
   font-weight: bold;
 }
 
-.about__me {
-  border-bottom: solid 1px gray;
-}
-
 h3 {
   text-align: center;
+}
+
+section {
+  margin-top: 50px;
 }
